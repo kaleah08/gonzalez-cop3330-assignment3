@@ -1,0 +1,37 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App
+
+
+class App {
+ + void main(String[] args){
+    +String fileName
+    countWords(readFile(fileName))
+    }
+ + String[] readFile(String fileName){
+    +FileReader reader
+    +BufferedReader br
+    +String line
+    +br.readLine()
+    +String[] words
+    +line.split()
+    }
+ + HashMap<String, Integer> countWords(String[] words){
+    +HashMap wordCount
+    +int freq
+    for loop (0 < words.length)
+    +int n
+    wordCount.put
+    for loop(0 < entry.getValue())
+    System.out.println
+    }
+}
+
+enum TimeUnit {
+DAYS
+HOURS
+MINUTES
+}
+
+@enduml

@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App
+
+class App {
++main(String[] args){
+    Scanner input
+    +String name
+    +String author
+    +String javaScript
+    +String CSS
+    creatingFiles();
+ }
++creatingFiles(String name, String javaScript, String CSS){
+    +String regularFile
+    File file
+    file.mkdirs()
+    if statement else statement
+    +String html
+    File html
+    if statement else statement
+    if(javaScript.equals())
+        +String js
+        File jsFile
+        jsFile.mkdir()
+        if statement else statement
+    if(CSS.equals())
+        +String css
+        File cssFile
+        cssFile.mkdir()
+        if statement else statement
+}
+}
+
+enum TimeUnit {
+DAYS
+HOURS
+MINUTES
+}
+
+@enduml
